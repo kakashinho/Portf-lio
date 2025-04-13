@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(22, 3, 54, 1);
+}
+ul{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    list-style-type: none;
+    border: 2px solid white;
+    margin: 10px;
+    border-radius: 50px;
+    margin-inline: 10%;
+    padding: 0;
+}
+ul li{
+    margin: 5px;
+}
+
+ul li a{
+    text-decoration: none;
+    font-family: 'Inter';
+    font-size: 1.5vw; /* 5% da largura da tela */ 
+    margin: 5px;
+    padding-inline: 10px;
+    color: white;
+    display: block;
+}
+#contate{
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 20px;
+}
+#contate a{
+    color: rgba(22, 3, 54, 1);
+}
+
+main{
+    display: flex;
+    margin:0px;
+    margin-top: 20px;
+    margin-inline:2%;
+}
+
+main section{
+    margin:0px;
+    width: 60%;
+    height: auto;
+    background-color: rgba(45, 47, 92, 1);
+}
+main section h1{
+    font-family: 'Inter';
+    margin-bottom:2%;
+    font-size: 5vw; /* 5% da largura da tela */    
+    letter-spacing: 2px;
+    color: #F9DEFC;    
+    text-align: center;
+}
+main section article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60%;
+    margin:0px;
+    font-family: 'Inter';    
+    background-color: rgba(138, 99, 253, 1);
+    margin:2%;
+    border-radius:10px;
+}
+
+article > div {
+    margin:10px;
+    padding: 5px;
+    font-family: 'Inter';  
+    color:white;   
+}
+div > h2{
+    margin-bottom:2%;
+    font-size: 3vw; /* 5% da largura da tela */    
+}
+div > h3{
+    margin:2%;
+    font-size: 2vw; /* 5% da largura da tela */
+    color: rgba(237, 161, 155, 1) ;
+}
+div > p{
+    margin:2%;
+    font-size: 2vw; /* 5% da largura da tela */
+    text-align: center;
+}
+#grad > img{
+    height: auto;
+    width: 100%;
+    display: block; /* remove espaço embaixo da imagem */
+}
+
+#grad {
+    display: flex;
+    align-items: end;
+    width: 40%;
+    height: auto;
+    background-image: linear-gradient(180deg, #F9CFFD, #D0A6FD, #B18AFE, #2E1C5B, #160336);
+}
