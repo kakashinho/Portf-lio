@@ -1,0 +1,262 @@
+/*  Estilo Geral*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /*Tamanho total do elemento vai continuar sendo 100px de largura. O conteúdo vai “se ajustar” dentro disso, considerando padding e borda. */
+    font-family: 'Inter';
+}
+body{
+    background-color: #160336;
+    height: 100vh;
+}
+.interface{
+    max-width: 1280px;
+    margin: 0 auto; /*
+    0 → margem superior e inferior = 0
+    auto → margem esquerda e direita = automática (o navegador vai dividir o espaço restante igualmente dos dois lados) */
+}
+.flex{
+    display: flex;
+}
+
+h2.título{
+    color: #fff;
+    font-size: 34px;
+    text-align: center;
+}
+h2.título span{
+    color: #a374f4;
+}
+
+.btn-contato button{
+    color: #646363;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;/*  Aumenta a espessura da letra*/
+    background-color: #fff;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;/*  Aumenta a área do cursor*/
+}
+
+button:hover, form .btn-enviar input[type=submit]:hover{
+    box-shadow: 0px 0px 8px #a374f4;
+    color: #160336;
+    transform: scale(1.10);
+    transition: .2s;
+}
+
+/*  Estilo do Cabeçalho*/
+header{
+    padding: 40px 4%;
+}
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a{
+    color: #9a9a9a;
+    text-decoration: none;
+    display:inline-block;
+    transition: .2s;
+}
+header a:hover{
+    color: #fff;
+    transform: scale(1.10);
+}
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* Estilo do topo do site */
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .interface .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.topo-do-site .txt-topo-site h1{
+    color: #fff;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: #a374f4;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    margin: 40px 0px;
+}
+
+.topo-do-site .img-topo-site {
+    position:relative;
+}
+
+.topo-do-site .img-topo-site > img{
+    position:relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    aspect-ratio: 1 / 1;
+    object-position: right; /* Ou: 100% 50% */
+    object-fit: cover;    /* Corta o excesso e preenche a caixa */
+    border-radius: 50%;   /* Forma redonda */
+    border: 6px solid #fff;
+    box-shadow: 0px 0px 8px #a374f4;
+}
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }    
+}
+
+/* Estilo das Especialidades */
+section.especialidades{
+    padding: 40px 4%;
+}
+
+section.especialidades .flex{
+    gap: 60px;    
+}
+
+.especialidades .especialidades-box{
+    margin-top: 40px;
+    color: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover{
+    box-shadow: 0 0 8px #9a9a9a; /* deslocamento vertical, horizontal, espalhamento*/
+    transform: scale(1.10);
+}
+
+.especialidades .especialidades-box i{
+    font-size: 70px;
+    color: #a374f4;
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+    color: #fff;
+}
+
+/* Estilo do Sobre */
+section.sobre{
+    padding: 40px 4%;
+}
+
+section.sobre .interface .flex{
+    align-items: center;
+    gap: 50px; 
+}
+
+section.sobre .txt-sobre{
+    color: #fff;
+}
+
+section.sobre .txt-sobre > *{
+    margin: 30px 0;
+}
+
+section.sobre .txt-sobre h2 {
+    color: #fff;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+section.sobre .txt-sobre h2 span{
+    color: #a374f4;
+    display: block;
+    line-height: 40px;
+}
+section.sobre .txt-sobre p{
+    margin: 20px 0;
+}
+
+section.sobre .txt-sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 0;
+    background-color: #a374f4;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+section.sobre .img-sobre > img{
+    border-radius: 20px;   /* Forma redonda */
+}
+
+/* Estilo Formulario */
+section h2.titulo{
+    color: #fff;
+    font-size: 48px;
+    margin-bottom: 30px;   
+}
+section h2.titulo span{
+    color: #a374f4;
+    line-height: 40px;
+}
+
+section.formulario{
+    text-align: center;
+    padding: 80px 4%;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+form input::placeholder, form textarea::placeholder{
+    color:#a374f4;
+}
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input[type=submit]{
+    width: 120px;
+    background-color: #a374f4;
+    cursor: pointer;
+    transition: .2s;
+}
