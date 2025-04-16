@@ -135,6 +135,7 @@ section.especialidades .flex{
 }
 
 .especialidades .especialidades-box{
+    max-width: 400px;
     margin-top: 40px;
     color: #fff;
     border-radius: 20px;
