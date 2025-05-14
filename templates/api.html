@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\src\static\api.css">
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Fim google Fonts -->
+    <!--Bootstrap Ícons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Fim Bootstrap Ícons-->
+    <title>API</title>
+</head>
+
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="#"><img src="..\src\static\img\Logo João Siqueira.png" style="width: 50px; height: auto;"
+                        alt="Logo João Siqueira"></a>
+            </div><!--logo-->
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="../index.html">Destaque</a></li>
+                    <li><a href="../index.html">Sobre mim</a></li>
+                    <li><a href="../index.html">Projetos</a></li>
+                </ul>
+            </nav><!--menu-desktop-->
+
+            <div class="btn-contato">
+                <a href="#formulario"><button>Contato</button></a>
+            </div>
+        </div><!--interface-->
+    </header>
+    <main>
+        <section class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>Painel Econômico SP <span>– Comércio Exterior(API)</span></h1>
+                        <article>
+                            <p>O projeto possui gráficos que evidenciam as exportações e importações dos municípios do Estado de São Paulo, possuindo diversos filtros, como valor agregado, valor FOB, kg_líquido, carga, município. O projeto é voltado para análise e comparação entre os municípios e suas cargas, para auxiliar o specialista em logística a tomar a melhor decisão em seus projetos.</p>
+                        </article>
+                        <h2 class="titulo">Tecnologias do Projeto</h2>
+                        <div class="tecnologias">
+                            <img src="https://img.shields.io/badge/Python-blue.svg?style=for-the-badge&logo=Python&logoColor=white" alt="Python">
+                            <img src="https://img.shields.io/badge/Flask-blue.svg?style=for-the-badge&logo=Flask&logoColor=white" alt="Flask">
+                            <img src="https://img.shields.io/badge/HTML-blue.svg?style=for-the-badge&logo=HTML&logoColor=white" alt="HTML">
+                            <img src="https://img.shields.io/badge/CSS-blue.svg?style=for-the-badge&logo=CSS&logoColor=white" alt="CSS">
+                            <img src="https://img.shields.io/badge/Figma-blue.svg?style=for-the-badge&logo=Figma&logoColor=white" alt="Figma">
+                            <img src="https://img.shields.io/badge/VSCode-blue.svg?style=for-the-badge&logo=Visual Studio Code&logoColor=white" alt="VSCode">
+                            <img src="https://img.shields.io/badge/Jira-blue.svg?style=for-the-badge&logo=Jira&logoColor=white" alt="Jira">
+                            <img src="https://img.shields.io/badge/Git-blue.svg?style=for-the-badge&logo=Git&logoColor=white" alt="Git">
+                            <img src="https://img.shields.io/badge/Plotly-blue.svg?style=for-the-badge&logo=Plotly&logoColor=white" alt="Plotly">
+                            <img src="https://img.shields.io/badge/JavaScript-blue.svg?style=for-the-badge&logo=JavaScript&logoColor=white" alt="JavaScript">
+                            <img src="https://img.shields.io/badge/MySQL-blue.svg?style=for-the-badge&logo=MySQL&logoColor=white" alt="MySQL">
+                            <img src="https://img.shields.io/badge/Streamlit-blue.svg?style=for-the-badge&logo=Streamlit&logoColor=white" alt="Streamlit">
+                            <img src="https://img.shields.io/badge/Google Colab-blue.svg?style=for-the-badge&logo=Google Colab&logoColor=white" alt="Google Colab">
+                        </div>
+                    </div><!--txt-topo-site-->
+                    <div class="img-topo-site">
+                        <img src="..\src\static\img/protótipo-figma.gif" style="width: 500px; height: auto;"
+                            alt="Gif API">
+                            <h2>Para ver o código:</h2>
+                        <a href="https://github.com/arthur-oliver/API-Crows"><img src="https://img.shields.io/badge/GitHub-blue.svg?style=for-the-badge&logo=GitHub&logoColor=white"></img></a>
+                    </div><!--img-topo-site-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--topo-do-site-->
+        <section class="sobre" id="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="../src/static/img/logo_api.jpeg" style="width: 400px; height: auto;" alt="">
+
+                    </div><!--img-sobre-->
+                    <div class="txt-sobre">
+                        <h2>Minha atuação<span> na API:</span></h2>
+                        <p>Neste projeto, atuei como Product Owner, sendo responsável pela definição e gestão do backlog do produto. Elaborei e priorizei as entregas das sprints com base nas necessidades do negócio, alinhando constantemente as expectativas com o cliente por meio de questionários no slack. Além disso, conduzi sessões com o time de desenvolvimento para garantir clareza nos requisitos e propor soluções que simplificassem a entrega, otimizando o uso do tempo e dos recursos disponíveis. Também atuei como facilitador entre o cliente e o time, promovendo a colaboração contínua, a validação de entregas e a adaptação rápida frente a mudanças.</p>
+                        <p>Assumi um papel multifuncional neste projeto, sendo responsável por grande parte da construção da aplicação. Realizei a primeira versão de integração entre o front-end e o back-end utilizando Flask, desenvolvendo desde a lógica de geração de arquivos CSV — que alimentavam dinamicamente as opções da página — até os filtros que posteriormente chamava a função geradora de gráficos e posteriormente carregava no site. Além disso, fui o responsável por gerar: o gráfico da Balança Comercial, integrando dados processados dessa geração de gráficos.</p>
+                        </div>
+                    </div><!--txt-sobre-->
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--sobre-->
+    </main>
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="btn-social">
+                        <a href="https://github.com/kakashinho" target="_blank"><button><i class="bi bi-github"></i></button></a>
+                        <a href="https://www.linkedin.com/in/joao-vitor-siqueira-a2a2a3227/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                        <a href="https://teams.microsoft.com/l/chat/0/0?users=joao.siqueira12@fatec.sp.gov.br" target="_blank"><button><i class="bi bi-envelope"></i></button></a>
+                        <a href="../docs/João Vitor - Currículo - 2025.pdf" target="_blank"> <button><i class="bi bi-file-earmark-pdf"></i></button></a>
+                    </div>
+                </div><!--flex-->
+                <div class="borda"></div><!--borda-->
+                <p><i class="bi bi-envelope-fill"></i><a href="mailto:joao.siqueira12@fatec.sp.gov.br">joao.siqueira12@fatec.sp.gov.br</a></p>
+            </div><!--interface-->
+    </footer>
+</body>
+
+</html>

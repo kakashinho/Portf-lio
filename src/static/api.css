@@ -1,0 +1,320 @@
+/*  Estilo Geral*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /*Tamanho total do elemento vai continuar sendo 100px de largura. O conteúdo vai “se ajustar” dentro disso, considerando padding e borda. */
+    font-family: 'Inter';
+}
+body{
+    background-color: #fff;
+    height: 100vh;
+}
+.interface{
+    max-width: 1280px;
+    margin: 0 auto; /*
+    0 → margem superior e inferior = 0
+    auto → margem esquerda e direita = automática (o navegador vai dividir o espaço restante igualmente dos dois lados) */
+}
+.flex{
+    display: flex;
+}
+
+h2.título{
+    color: #000;
+    font-size: 34px;
+    text-align: center;
+}
+h2.título span{
+    color: #a374f4;
+}
+
+.btn-contato button{
+    color: #646363;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;/*  Aumenta a espessura da letra*/
+    background-color: #ffffff;
+
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;/*  Aumenta a área do cursor*/
+}
+
+button:hover, form .btn-enviar input[type=submit]:hover{
+    box-shadow: 0px 0px 8px #a374f4;
+    color: #160336;
+    transform: scale(1.10);
+    transition: .2s;
+}
+
+/*  Estilo do Cabeçalho*/
+header{
+    padding: 18px 4%;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    align-items: center;
+    z-index: 2;
+    background-color: #6b30d1;
+    filter: drop-shadow(10px);
+}
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a{
+    color: #d3d0d0;
+    text-decoration: none;
+    display:inline-block;
+    transition: .2s;
+}
+header a:hover{
+    color: #000;
+    transform: scale(1.10);
+}
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+.txt-topo-site > h2{
+    margin: 20px 0px;
+}
+
+/* Estilo do topo do site */
+section.topo-do-site{
+    margin-top: 80px;
+    padding: 40px 4%;
+}
+
+section.topo-do-site .interface .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 85px;
+}
+
+.topo-do-site .txt-topo-site h1{
+    color: #000;
+    font-size: 36px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: #a374f4;
+}
+
+.topo-do-site .txt-topo-site article{
+    margin: 40px 0px;
+
+}
+
+.topo-do-site .txt-topo-site article > p {
+    color: #000;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px; /* Espaçamento de 15px entre os parágrafos */
+}
+
+.topo-do-site .img-topo-site {
+    position:relative;
+}
+
+.topo-do-site .img-topo-site > img{
+    object-fit: cover;    /* Corta o excesso e preenche a caixa */
+    border-radius: 2%;   /* Forma redonda */
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 8px #a374f4;
+}
+
+/* Estilo do Sobre */
+section.sobre{
+    padding: 40px 4%;
+}
+
+section.sobre .interface .flex{
+    align-items: center;
+    gap: 50px; 
+}
+
+section.sobre .txt-sobre{
+    color: #000;
+
+}
+
+section.sobre .txt-sobre > *{
+    margin: 30px 0;
+}
+
+section.sobre .txt-sobre h2 {
+    color: #000;
+
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+section.sobre .txt-sobre h2 span{
+    color: #a374f4;
+    line-height: 40px;
+}
+section.sobre .txt-sobre p{
+    margin: 20px 0;
+}
+
+.btn-social button{
+    color:#160336;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 0;
+    background-color: #a374f4;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+section.sobre .img-sobre > img{
+    aspect-ratio: 1 / 1;
+    object-position: right; /* Ou: 100% 50% */
+    object-fit: cover;    /* Corta o excesso e preenche a caixa */
+    border-radius: 50%;   /* Forma redonda */
+    border: 6px solid #fff;
+    box-shadow: 0px 0px 8px #a374f4;
+}
+
+/*ESTILO RODAPÉ*/
+
+footer{
+    background-color: #6b30d1;
+    padding-block: 60px;
+    width: 100%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+footer .interface > div{
+    color:#160336;
+    align-items: center;
+    text-align: center;
+}
+
+footer .flex{
+    margin: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.borda{
+    border-top: 2px solid rgb(171, 167, 243);
+}
+
+.line-footer > p {
+    margin: 10px 0px;
+}
+
+footer .line-footer p a{
+    color: #160336;
+}
+
+
+@media screen and (max-width: 1020px){
+
+    /*CLASSES GERAIS*/
+    .flex{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .topo-site .flex{
+        flex-direction: column-reverse;
+    }
+
+    h2.titulo{
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /*CABEÇALHO*/
+    
+    .menu-desktop > ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*TOPO DO SITE*/
+
+    section.topo-site .flex{
+        gap: 40px;
+    }
+
+    section.topo-site{
+        padding: 20px 8%;
+    }
+
+    .topo-site h1{
+        font-size: 30px;
+    }
+
+    .topo-site .img-topo-site{
+        width: 100%;
+    }
+
+    /*ESPECIALIDADES*/
+
+    section.especialidades{
+        padding: 40px 8%;
+    }
+
+    /*SOBRE*/
+
+    section.sobre{
+        padding: 80px 8%;
+    }
+
+    .sobre .txt-sobre h2{
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .btn-social{
+        text-align: center;
+    }
+
+    .img-sobre img{
+        width: 100%; 
+    }
+
+    /*PORTFÓLIO*/
+
+    section.portfolio{
+        padding: 80px 8%;
+    }
+
+    .img-portfolio{
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    section.portfolio .flex{
+        gap: 60px;
+    }
+
+}
