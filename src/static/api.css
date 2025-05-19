@@ -1,54 +1,52 @@
-/*  Estilo Geral*/
+/*  Estilo Geral*/
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
-    /*Tamanho total do elemento vai continuar sendo 100px de largura. O conteúdo vai “se ajustar” dentro disso, considerando padding e borda. */
+    box-sizing: border-box;
     font-family: 'Inter';
 }
 body{
-    background-color: #fff;
+    background-color: #B3D5F2; /* Novo fundo azul claro */
     height: 100vh;
+    color: #056CF2; /* Novo texto geral azul escuro */
 }
 .interface{
     max-width: 1280px;
-    margin: 0 auto; /*
-    0 → margem superior e inferior = 0
-    auto → margem esquerda e direita = automática (o navegador vai dividir o espaço restante igualmente dos dois lados) */
+    margin: 0 auto;
 }
 .flex{
     display: flex;
 }
 
 h2.título{
-    color: #000;
+    color: #0583F2; /* Novo título azul primário */
     font-size: 34px;
     text-align: center;
 }
 h2.título span{
-    color: #a374f4;
+    color: #0583F2; /* Nova cor de destaque do título (azul primário) */
 }
 
 .btn-contato button{
-    color: #646363;
+    color: #fff; /* Novo texto branco no botão */
     padding: 10px 40px;
     font-size: 18px;
-    font-weight: 600;/*  Aumenta a espessura da letra*/
-    background-color: #ffffff;
-
+    font-weight: 600;
+    background-color: #056CF2; /* Novo fundo azul escuro do botão */
     border: 0;
     border-radius: 20px;
-    cursor: pointer;/*  Aumenta a área do cursor*/
+    cursor: pointer;
 }
 
 button:hover, form .btn-enviar input[type=submit]:hover{
-    box-shadow: 0px 0px 8px #a374f4;
-    color: #160336;
+    box-shadow: 0px 0px 8px #0583F2; /* Nova sombra azul primária no hover */
+    color: #fff; /* Novo texto branco no hover */
     transform: scale(1.10);
     transition: .2s;
+    background-color: #0597F2; /* Novo fundo azul primário no hover */
 }
 
-/*  Estilo do Cabeçalho*/
+/*  Estilo do Cabeçalho*/
 header{
     padding: 18px 4%;
     position: fixed;
@@ -57,7 +55,7 @@ header{
     width: 100%;
     align-items: center;
     z-index: 2;
-    background-color: #6b30d1;
+    background-color: #056CF2; /* Novo fundo azul escuro do cabeçalho */
     filter: drop-shadow(10px);
 }
 header > .interface{
@@ -66,13 +64,13 @@ header > .interface{
     justify-content: space-between;
 }
 header a{
-    color: #d3d0d0;
+    color: #fff; /* Nova cor dos links do cabeçalho (branco) */
     text-decoration: none;
     display:inline-block;
     transition: .2s;
 }
 header a:hover{
-    color: #000;
+    color: #B3D5F2; /* Novo hover dos links (azul claro do fundo) */
     transform: scale(1.10);
 }
 header nav ul{
@@ -91,6 +89,7 @@ header nav ul li{
 section.topo-do-site{
     margin-top: 80px;
     padding: 40px 4%;
+    background-color: #53a7f1; /* Garante que o gradiente seja visível */
 }
 
 section.topo-do-site .interface .flex{
@@ -100,13 +99,13 @@ section.topo-do-site .interface .flex{
 }
 
 .topo-do-site .txt-topo-site h1{
-    color: #000;
+    color: #fff; /* Novo título branco */
     font-size: 36px;
     line-height: 40px;
 }
 
 .topo-do-site .txt-topo-site h1 span{
-    color: #a374f4;
+    color: #056CF2; /* Nova cor de destaque do título (azul escuro) */
 }
 
 .topo-do-site .txt-topo-site article{
@@ -115,7 +114,7 @@ section.topo-do-site .interface .flex{
 }
 
 .topo-do-site .txt-topo-site article > p {
-    color: #000;
+    color: #fff; /* Novos parágrafos brancos */
     letter-spacing: 1.5px;
     margin-bottom: 10px; /* Espaçamento de 15px entre os parágrafos */
 }
@@ -125,25 +124,25 @@ section.topo-do-site .interface .flex{
 }
 
 .topo-do-site .img-topo-site > iframe{
-    object-fit: cover;    /* Corta o excesso e preenche a caixa */
-    border-radius: 2%;   /* Forma redonda */
-    border: 2px solid #fff;
-    box-shadow: 0px 0px 8px #a374f4;
+    object-fit: cover;
+    border-radius: 2%;
+    border: 6px solid #fff; /* Nova borda branca */
+    box-shadow: 0px 0px 20px #0583F2; /* Nova sombra azul primária */
 }
 
 /* Estilo do Sobre */
 section.sobre{
     padding: 40px 4%;
+    background-color: #66B1F2; /* Novo fundo azul mais claro */
 }
 
 section.sobre .interface .flex{
     align-items: center;
-    gap: 50px; 
+    gap: 50px;
 }
 
 section.sobre .txt-sobre{
-    color: #000;
-
+    color: #fff; /* Novo texto branco na seção sobre */
 }
 
 section.sobre .txt-sobre > *{
@@ -151,26 +150,26 @@ section.sobre .txt-sobre > *{
 }
 
 section.sobre .txt-sobre h2 {
-    color: #000;
-
+    color: #fff; /* Novo título branco na seção sobre */
     font-size: 40px;
     margin-bottom: 30px;
 }
 section.sobre .txt-sobre h2 span{
-    color: #a374f4;
+    color: #0597F2; /* Nova cor de destaque do título (outro azul primário) */
     line-height: 40px;
 }
 section.sobre .txt-sobre p{
+    color: #fff; /* Novos parágrafos brancos na seção sobre */
     margin: 20px 0;
 }
 
 .btn-social button{
-    color:#160336;
+    color: #fff; /* Novo texto branco nos botões sociais */
     width: 60px;
     height: 60px;
     border-radius: 50%;
     border: 0;
-    background-color: #a374f4;
+    background-color: #0583F2; /* Novo fundo azul primário dos botões sociais */
     font-size: 25px;
     cursor: pointer;
     margin: 0 5px;
@@ -179,24 +178,24 @@ section.sobre .txt-sobre p{
 
 section.sobre .img-sobre > img{
     aspect-ratio: 1 / 1;
-    object-position: center; /* Ou: 100% 50% */
-    object-fit: cover;    /* Corta o excesso e preenche a caixa */
-    border-radius: 50%;   /* Forma redonda */
+    object-position: center;
+    object-fit: cover;
+    border-radius: 50%;
     border: 6px solid #fff;
-    box-shadow: 0px 0px 8px #a374f4;
+    box-shadow: 0px 0px 8px #0583F2; /* Nova sombra azul primária */
 }
 
 /*ESTILO RODAPÉ*/
 
 footer{
-    background-color: #6b30d1;
+    background-color: #056CF2; /* Novo fundo azul escuro do rodapé */
     padding-block: 60px;
     width: 100%;
-    box-shadow: 0 0 40px 10px #ffffff1d;
+    box-shadow: 0 0 40px 10px #B3D5F21d; /* Nova sombra sutil azul claro */
+    color: #fff; /* Novo texto branco no rodapé */
 }
 
 footer .interface > div{
-    color:#160336;
     align-items: center;
     text-align: center;
 }
@@ -209,17 +208,17 @@ footer .flex{
 }
 
 .borda{
-    border-top: 2px solid rgb(171, 167, 243);
+    border-top: 2px solid #66B1F2; /* Nova borda azul mais clara */
 }
 
 .line-footer > p {
     margin: 10px 0px;
+    color: #fff; /* Novo texto branco na linha do rodapé */
 }
 
 footer .line-footer p a{
-    color: #160336;
+    color: #B3D5F2; /* Nova cor dos links do rodapé (azul claro) */
 }
-
 
 @media screen and (max-width: 1020px){
 

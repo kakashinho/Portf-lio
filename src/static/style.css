@@ -1,53 +1,53 @@
-/*  Estilo Geral*/
+/* Estilo Geral*/
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
-    /*Tamanho total do elemento vai continuar sendo 100px de largura. O conteúdo vai “se ajustar” dentro disso, considerando padding e borda. */
+    box-sizing: border-box;
     font-family: 'Inter';
 }
 body{
-    background-color: #160336;
+    background-color: #B3D5F2; /* Fundo mais claro */
     height: 100vh;
+    color: #056CF2; /* Textos gerais em um tom da paleta */
 }
 .interface{
     max-width: 1280px;
-    margin: 0 auto; /*
-    0 → margem superior e inferior = 0
-    auto → margem esquerda e direita = automática (o navegador vai dividir o espaço restante igualmente dos dois lados) */
+    margin: 0 auto;
 }
 .flex{
     display: flex;
 }
 
 h2.título{
-    color: #fff;
+    color: #0583F2; /* Título em um tom primário */
     font-size: 34px;
     text-align: center;
 }
 h2.título span{
-    color: #a374f4;
+    color: #0583F2; /* Destaque do título em outro tom primário */
 }
 
 .btn-contato button{
     color: #646363;
     padding: 10px 40px;
     font-size: 18px;
-    font-weight: 600;/*  Aumenta a espessura da letra*/
-    background-color: #fff;
+    font-weight: 600;
+    background-color: #056CF2; /* Botão em um tom secundário */
+    color: #fff; /* Texto do botão branco para contraste */
     border: 0;
     border-radius: 20px;
-    cursor: pointer;/*  Aumenta a área do cursor*/
+    cursor: pointer;
 }
 
 button:hover, form .btn-enviar input[type=submit]:hover{
-    box-shadow: 0px 0px 8px #a374f4;
-    color: #160336;
+    box-shadow: 0px 0px 8px #0583F2; /* Sombra no hover em um tom primário */
+    background-color: #0597F2; /* Fundo do hover em outro tom primário */
+    color: #fff;
     transform: scale(1.10);
     transition: .2s;
 }
 
-/*  Estilo do Cabeçalho*/
+/* Estilo do Cabeçalho*/
 header{
     padding: 18px 4%;
     position: fixed;
@@ -56,7 +56,7 @@ header{
     width: 100%;
     align-items: center;
     z-index: 2;
-    background-color: #6b30d1;
+    background-color: #056CF2; /* Cabeçalho em um tom secundário */
     filter: drop-shadow(10px);
 }
 header > .interface{
@@ -65,13 +65,13 @@ header > .interface{
     justify-content: space-between;
 }
 header a{
-    color: #d3d0d0;
+    color: #fff; /* Links do cabeçalho em branco */
     text-decoration: none;
     display:inline-block;
     transition: .2s;
 }
 header a:hover{
-    color: #fff;
+    color: #B3D5F2; /* Hover dos links em um tom mais claro */
     transform: scale(1.10);
 }
 header nav ul{
@@ -87,6 +87,8 @@ header nav ul li{
 section.topo-do-site{
     margin-top: 80px;
     padding: 40px 4%;
+    background-image: linear-gradient(to left, #fff 0%, #D1E9F5 5%, #53a7f1 80%, #056CF2 100%); 
+    background-color: transparent; /* Opcional: Define uma cor de fundo de fallback caso o gradiente não seja suportado */
 }
 
 section.topo-do-site .interface .flex{
@@ -102,7 +104,7 @@ section.topo-do-site .interface .flex{
 }
 
 .topo-do-site .txt-topo-site h1 span{
-    color: #a374f4;
+    color: #056CF2; /* Destaque do título em um tom primário */
 }
 
 .topo-do-site .txt-topo-site article{
@@ -113,7 +115,7 @@ section.topo-do-site .interface .flex{
 .topo-do-site .txt-topo-site article > p {
     color: #fff;
     letter-spacing: 1.5px;
-    margin-bottom: 10px; /* Espaçamento de 15px entre os parágrafos */
+    margin-bottom: 10px;
 }
 
 .topo-do-site .img-topo-site {
@@ -124,11 +126,11 @@ section.topo-do-site .interface .flex{
     position:relative;
     animation: flutuar 2s ease-in-out infinite alternate;
     aspect-ratio: 1 / 1;
-    object-position: right; /* Ou: 100% 50% */
-    object-fit: cover;    /* Corta o excesso e preenche a caixa */
-    border-radius: 50%;   /* Forma redonda */
+    object-position: right;
+    object-fit: cover;
+    border-radius: 50%;
     border: 6px solid #fff;
-    box-shadow: 0px 0px 8px #a374f4;
+    box-shadow: 0px 0px 20px #0583F2; /* Sombra da imagem em um tom primário */
 }
 
 @keyframes flutuar {
@@ -137,51 +139,55 @@ section.topo-do-site .interface .flex{
     }
     100%{
         top: 30px;
-    }    
+    }
 }
 
 /* Estilo das Especialidades */
 section.especialidades{
     padding: 40px 4%;
+    background-color: #B3D5F2; /* Fundo da seção em um tom mais claro */
 }
 
 section.especialidades .flex{
-    gap: 60px;    
+    gap: 60px;
 }
 
 .especialidades .especialidades-box{
     max-width: 400px;
+    height: 400px;
     margin-top: 40px;
-    color: #fff;
+    color: #056CF2;
     border-radius: 20px;
     padding: 40px;
     transition: .2s;
+    background-color: #fff; /* Fundo dos boxes branco para contraste */
 }
 
 .especialidades .especialidades-box:hover{
-    box-shadow: 0 0 8px #9a9a9a; /* deslocamento vertical, horizontal, espalhamento*/
+    box-shadow: 0 0 8px #66B1F2; /* Sombra no hover em um tom médio */
     transform: scale(1.10);
 }
 
 .especialidades .especialidades-box i{
     font-size: 70px;
-    color: #a374f4;
+    color: #0597F2; /* Ícones em um tom primário */
 }
 
 .especialidades .especialidades-box h3{
     font-size: 28px;
     margin: 15px 0;
-    color: #fff;
+    color: #0583F2; /* Títulos dos boxes em outro tom primário */
 }
 
 /* Estilo do Sobre */
 section.sobre{
     padding: 40px 4%;
+    background-color: #66B1F2; /* Fundo da seção em um tom médio */
 }
 
 section.sobre .interface .flex{
     align-items: center;
-    gap: 50px; 
+    gap: 50px;
 }
 
 section.sobre .txt-sobre{
@@ -198,7 +204,7 @@ section.sobre .txt-sobre h2 {
     margin-bottom: 30px;
 }
 section.sobre .txt-sobre h2 span{
-    color: #a374f4;
+    color: #0597F2; /* Destaque do título em um tom primário */
     line-height: 40px;
 }
 section.sobre .txt-sobre p{
@@ -210,22 +216,24 @@ section.sobre .txt-sobre p{
     height: 60px;
     border-radius: 50%;
     border: 0;
-    background-color: #a374f4;
+    background-color: #0583F2; /* Botões sociais em outro tom primário */
     font-size: 25px;
     cursor: pointer;
     margin: 0 5px;
     transition: .2s;
+    color: #fff; /* Ícones dos botões sociais em branco */
 }
 
 section.sobre .img-sobre > img{
-    border-radius: 20px;   /* Forma redonda */
+    border-radius: 20px;
 }
 
 /*ESTILO DO PORTFÓLIO*/
 
 section.portfolio{
     padding: 80px 4%;
-    box-shadow: 0 0 40px 10px #ffffff1d;
+    box-shadow: 0 0 40px 10px #B3D5F21d; /* Sombra sutil */
+    background-color: #B3D5F2; /* Fundo da seção em um tom mais claro */
 }
 
 section.portfolio .flex{
@@ -266,7 +274,7 @@ section.portfolio .flex{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(42, 4, 109, 0.7); /* cor com transparência */
+    background-color: rgba(5, 131, 242, 0.7); /* Overlay em um tom primário com transparência */
     border-radius: 40px;
     display: flex;
     align-items: center;
@@ -285,18 +293,19 @@ section.portfolio .flex{
 
 /* Estilo Formulario */
 section h2.titulo{
-    color: #fff;
+    color: #fff; /* Título da seção em um tom primário */
     font-size: 48px;
-    margin-bottom: 30px;   
+    margin-bottom: 30px;
 }
 section h2.titulo span{
-    color: #a374f4;
+    color: #fff;
     line-height: 40px;
 }
 
 section.formulario{
     text-align: center;
     padding: 80px 4%;
+    background-color: #66B1F2; /* Fundo da seção em um tom médio */
 }
 
 form{
@@ -315,10 +324,11 @@ form input, form textarea{
     padding: 20px 15px;
     border-radius: 15px;
     font-size: 18px;
+    color: #056CF2; /* Cor do texto do input */
 }
 
 form input::placeholder, form textarea::placeholder{
-    color:#a374f4;
+    color:#66B1F2; /* Cor do placeholder em um tom médio */
 }
 
 form textarea{
@@ -333,7 +343,8 @@ form .btn-enviar{
 
 form .btn-enviar input[type=submit]{
     width: 120px;
-    background-color: #a374f4;
+    background-color: #0583F2; /* Botão de enviar em outro tom primário */
+    color: #fff; /* Texto do botão branco */
     cursor: pointer;
     transition: .2s;
 }
@@ -343,7 +354,9 @@ form .btn-enviar input[type=submit]{
 footer{
     padding-block: 60px;
     width: 100%;
-    box-shadow: 0 0 40px 10px #ffffff1d;
+    box-shadow: 0 0 40px 10px #B3D5F21d; /* Sombra sutil */
+    background-color: #056CF2; /* Fundo do rodapé em um tom secundário */
+    color: #fff; /* Texto do rodapé branco */
 }
 
 footer .interface > div{
@@ -359,11 +372,11 @@ footer .flex{
 }
 
 .borda{
-    border-top: 2px solid rgb(171, 167, 243);
+    border-top: 2px solid #66B1F2; /* Borda superior em um tom médio */
 }
 
-footer .line-footer p i{  
-    color:rgb(171, 167, 243);
+footer .line-footer p i{
+    color:#fff; /* Ícones do rodapé em um tom médio */
     font-size: 18px;
 }
 .line-footer > p {
@@ -371,7 +384,7 @@ footer .line-footer p i{
 }
 
 footer .line-footer p a{
-    color: #fff;
+    color: #B3D5F2; /* Links do rodapé em um tom mais claro */
 }
 
 
@@ -403,9 +416,9 @@ footer .line-footer p a{
         max-width: 100%;
         height: auto;
     }
-    
+
     /*CABEÇALHO*/
-    
+
     .menu-desktop > ul{
         display: flex;
         flex-direction: column;
@@ -452,7 +465,7 @@ footer .line-footer p a{
     }
 
     .img-sobre img{
-        width: 100%; 
+        width: 100%;
     }
 
     /*PORTFÓLIO*/
