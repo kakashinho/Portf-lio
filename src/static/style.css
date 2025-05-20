@@ -32,8 +32,8 @@ h2.título span{
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 600;
-    background-color: #056CF2; /* Botão em um tom secundário */
-    color: #fff; /* Texto do botão branco para contraste */
+    background-color: #ffffff; /* Botão em um tom secundário */
+    color: #056CF2; /* Texto do botão branco para contraste */
     border: 0;
     border-radius: 20px;
     cursor: pointer;
@@ -86,9 +86,8 @@ header nav ul li{
 /* Estilo do topo do site */
 section.topo-do-site{
     margin-top: 80px;
-    padding: 40px 4%;
-    background-image: linear-gradient(to left, #fff 0%, #D1E9F5 5%, #53a7f1 80%, #056CF2 100%); 
-    background-color: transparent; /* Opcional: Define uma cor de fundo de fallback caso o gradiente não seja suportado */
+    padding: 40px 4%; 
+    background-color: #53a7f1 ; /* Opcional: Define uma cor de fundo de fallback caso o gradiente não seja suportado */
 }
 
 section.topo-do-site .interface .flex{
@@ -225,7 +224,16 @@ section.sobre .txt-sobre p{
 }
 
 section.sobre .img-sobre > img{
-    border-radius: 20px;
+    width: 500px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius: 10%;
+    border: 6px solid #fff;
+    box-shadow: 0px 0px 20px #0583F2;
+    display: block;
+
+    /* Remova isso: height: auto; */
 }
 
 /*ESTILO DO PORTFÓLIO*/
