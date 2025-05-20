@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter';
+    border: 1px solid white;
 }
 body{
     background-color: #B3D5F2; /* Fundo mais claro */
@@ -30,7 +31,7 @@ h2.título span{
 .btn-contato button{
     color: #646363;
     padding: 10px 40px;
-    font-size: 18px;
+    font-size: 2vw;
     font-weight: 600;
     background-color: #ffffff; /* Botão em um tom secundário */
     color: #056CF2; /* Texto do botão branco para contraste */
@@ -65,6 +66,7 @@ header > .interface{
     justify-content: space-between;
 }
 header a{
+    font-size: 2vw;
     color: #fff; /* Links do cabeçalho em branco */
     text-decoration: none;
     display:inline-block;
@@ -405,9 +407,26 @@ footer .line-footer p a{
         flex-direction: column;
         gap: 20px;
     }
+    .btn-contato button{
+        font-size: 3vw;
+    }
+
+    header a{
+    font-size: 2vw;
+    }
+
+    section.topo-do-site {
+    margin-top: 120px;
+    }
+    header nav ul li {
+    padding: 0 0;
+    }
 
     .topo-site .flex{
         flex-direction: column-reverse;
+    }
+    .topo-do-site .txt-topo-site h1 {
+    font-size: 5vw;
     }
 
     h2.titulo{
