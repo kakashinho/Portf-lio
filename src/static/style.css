@@ -4,45 +4,46 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter';
-    border: 1px solid white;
+
 }
 body{
-    background-color: #B3D5F2; /* Fundo mais claro */
+    background-color: #B3D5F2;
     height: 100vh;
-    color: #056CF2; /* Textos gerais em um tom da paleta */
+    color: #056CF2;
 }
 .interface{
     max-width: 1280px;
     margin: 0 auto;
+    padding: 0 4%;
 }
 .flex{
     display: flex;
 }
 
 h2.título{
-    color: #0583F2; /* Título em um tom primário */
-    font-size: 34px;
+    color: #0583F2;
+    font-size: 4.0vh;
     text-align: center;
 }
 h2.título span{
-    color: #0583F2; /* Destaque do título em outro tom primário */
+    color: #0583F2;
 }
 
 .btn-contato button{
     color: #646363;
     padding: 10px 40px;
-    font-size: 2vw;
+    font-size: 1.2rem;
     font-weight: 600;
-    background-color: #ffffff; /* Botão em um tom secundário */
-    color: #056CF2; /* Texto do botão branco para contraste */
+    background-color: #ffffff;
+    color: #056CF2;
     border: 0;
     border-radius: 20px;
     cursor: pointer;
 }
 
 button:hover, form .btn-enviar input[type=submit]:hover{
-    box-shadow: 0px 0px 8px #0583F2; /* Sombra no hover em um tom primário */
-    background-color: #0597F2; /* Fundo do hover em outro tom primário */
+    box-shadow: 0px 0px 8px #0583F2;
+    background-color: #0597F2;
     color: #fff;
     transform: scale(1.10);
     transition: .2s;
@@ -57,7 +58,7 @@ header{
     width: 100%;
     align-items: center;
     z-index: 2;
-    background-color: #056CF2; /* Cabeçalho em um tom secundário */
+    background-color: #056CF2;
     filter: drop-shadow(10px);
 }
 header > .interface{
@@ -66,14 +67,14 @@ header > .interface{
     justify-content: space-between;
 }
 header a{
-    font-size: 2vw;
-    color: #fff; /* Links do cabeçalho em branco */
+    font-size: 1.1rem;
+    color: #fff;
     text-decoration: none;
     display:inline-block;
     transition: .2s;
 }
 header a:hover{
-    color: #B3D5F2; /* Hover dos links em um tom mais claro */
+    color: #B3D5F2;
     transform: scale(1.10);
 }
 header nav ul{
@@ -89,7 +90,7 @@ header nav ul li{
 section.topo-do-site{
     margin-top: 80px;
     padding: 40px 4%; 
-    background-color: #53a7f1 ; /* Opcional: Define uma cor de fundo de fallback caso o gradiente não seja suportado */
+    background-color: #53a7f1;
 }
 
 section.topo-do-site .interface .flex{
@@ -100,17 +101,16 @@ section.topo-do-site .interface .flex{
 
 .topo-do-site .txt-topo-site h1{
     color: #fff;
-    font-size: 36px;
+    font-size: 5vh;
     line-height: 40px;
 }
 
 .topo-do-site .txt-topo-site h1 span{
-    color: #056CF2; /* Destaque do título em um tom primário */
+    color: #056CF2;
 }
 
 .topo-do-site .txt-topo-site article{
     margin: 40px 0px;
-
 }
 
 .topo-do-site .txt-topo-site article > p {
@@ -124,6 +124,7 @@ section.topo-do-site .interface .flex{
 }
 
 .topo-do-site .img-topo-site > img{
+    max-width: 400px;
     position:relative;
     animation: flutuar 2s ease-in-out infinite alternate;
     aspect-ratio: 1 / 1;
@@ -131,7 +132,7 @@ section.topo-do-site .interface .flex{
     object-fit: cover;
     border-radius: 50%;
     border: 6px solid #fff;
-    box-shadow: 0px 0px 20px #0583F2; /* Sombra da imagem em um tom primário */
+    box-shadow: 0px 0px 20px #0583F2;/
 }
 
 @keyframes flutuar {
@@ -146,44 +147,52 @@ section.topo-do-site .interface .flex{
 /* Estilo das Especialidades */
 section.especialidades{
     padding: 40px 4%;
-    background-color: #B3D5F2; /* Fundo da seção em um tom mais claro */
+    background-color: #B3D5F2;
 }
 
 section.especialidades .flex{
+    justify-content: center;
     gap: 60px;
 }
 
 .especialidades .especialidades-box{
-    max-width: 400px;
-    height: 400px;
+    font-size: 2vh;
+    width: 300px;
+    height: 440px;
     margin-top: 40px;
     color: #056CF2;
     border-radius: 20px;
     padding: 40px;
     transition: .2s;
-    background-color: #fff; /* Fundo dos boxes branco para contraste */
+    background-color: #fff;
 }
 
 .especialidades .especialidades-box:hover{
-    box-shadow: 0 0 8px #66B1F2; /* Sombra no hover em um tom médio */
+    box-shadow: 0 0 8px #66B1F2;
     transform: scale(1.10);
 }
 
 .especialidades .especialidades-box i{
     font-size: 70px;
-    color: #0597F2; /* Ícones em um tom primário */
+    color: #0597F2;
 }
 
 .especialidades .especialidades-box h3{
-    font-size: 28px;
+    font-size: 3.5vh;
     margin: 15px 0;
-    color: #0583F2; /* Títulos dos boxes em outro tom primário */
+    color: #0583F2;
+}
+.especialidades .especialidades-box > ul {
+    padding:  0px 4%;
+}
+.especialidades .especialidades-box > ul > li {
+    margin-bottom: 5px;
 }
 
 /* Estilo do Sobre */
 section.sobre{
     padding: 40px 4%;
-    background-color: #66B1F2; /* Fundo da seção em um tom médio */
+    background-color: #66B1F2;
 }
 
 section.sobre .interface .flex{
@@ -205,7 +214,7 @@ section.sobre .txt-sobre h2 {
     margin-bottom: 30px;
 }
 section.sobre .txt-sobre h2 span{
-    color: #0597F2; /* Destaque do título em um tom primário */
+    color: #0597F2;
     line-height: 40px;
 }
 section.sobre .txt-sobre p{
@@ -217,7 +226,7 @@ section.sobre .txt-sobre p{
     height: 60px;
     border-radius: 50%;
     border: 0;
-    background-color: #0583F2; /* Botões sociais em outro tom primário */
+    background-color: #0583F2;
     font-size: 25px;
     cursor: pointer;
     margin: 0 5px;
@@ -226,7 +235,7 @@ section.sobre .txt-sobre p{
 }
 
 section.sobre .img-sobre > img{
-    width: 500px;
+    max-width: 400px; 
     aspect-ratio: 1 / 1;
     object-fit: cover;
     object-position: bottom;
@@ -310,6 +319,16 @@ section h2.titulo{
 section h2.titulo span{
     color: #fff;
     line-height: 40px;
+}
+
+section.formulario h2  {
+    font-size: 6vh;
+}
+section.formulario input  {
+    font-size: 2.5vh;
+}
+section.formulario textarea {
+    font-size: 2.5vh;
 }
 
 section.formulario{
@@ -408,15 +427,36 @@ footer .line-footer p a{
         gap: 20px;
     }
     .btn-contato button{
-        font-size: 3vw;
+        font-size: 3.5vw;
+
+        /* Telas pequenas (celulares) */
+        @media (max-width: 480px) {
+            padding: 10px 20px;
+        }
+    }
+    .img-topo-site > img{
+        height: 250px;
+        width: auto;
+    }
+    .topo-do-site .txt-topo-site span {
+        display: block;
     }
 
+    .topo-do-site .txt-topo-site article > p {
+        color: #fff;
+        letter-spacing: 1.5px;
+        margin-bottom: 10px;
+    }
+    section.topo-do-site .interface .flex {
+        gap: 20px;
+    }
+        
     header a{
-    font-size: 2vw;
+    font-size: 3vw;
     }
 
     section.topo-do-site {
-    margin-top: 120px;
+    margin-top: 90px;
     }
     header nav ul li {
     padding: 0 0;
@@ -425,8 +465,25 @@ footer .line-footer p a{
     .topo-site .flex{
         flex-direction: column-reverse;
     }
-    .topo-do-site .txt-topo-site h1 {
+    .topo-do-site .txt-topo-site h3 {
     font-size: 5vw;
+    }
+    
+    .topo-do-site .txt-topo-site article > p {
+    font-size: 3vw;
+    }
+
+    section.sobre .txt-sobre > * {
+    margin: 0px 0;
+    font-size: 2vh;
+    }
+    section.sobre .txt-sobre > h2 {
+    font-size: 5vh;
+    }
+
+    .btn-social button {
+    width: 40px;
+    height: 40px;
     }
 
     h2.titulo{
@@ -438,10 +495,8 @@ footer .line-footer p a{
         max-width: 100%;
         height: auto;
     }
-
-    img{
-        max-width: 100%;
-        height: auto;
+    div > .pdf{
+        height: 500px;
     }
 
     /*CABEÇALHO*/
@@ -474,6 +529,19 @@ footer .line-footer p a{
     section.especialidades{
         padding: 40px 8%;
     }
+    section.especialidades .flex {
+        gap: 0px;
+    }
+    .especialidades .especialidades-box{
+        height: 350px;
+        font-size: 2vh;
+        padding: 20px;
+    }
+    .especialidades .especialidades-box h3 {
+        margin: 10px 0;
+        font-size: 3.2vh;
+    }
+
 
     /*SOBRE*/
 
@@ -500,10 +568,19 @@ footer .line-footer p a{
     section.portfolio{
         padding: 80px 8%;
     }
+    section.portfolio .flex > a{
+        height: auto;
+        gap: 0px;
+    }
+
+    .img-portfolio{
+        height: 0px;
+        width: 0px;
+    }
 
     .img-portfolio{
         width: 100%;
-        max-width: 360px;
+        min-height: 300px;
         margin: 0 auto;
     }
 
